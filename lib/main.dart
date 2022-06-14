@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './starting-screen.dart';
+import './starting-tany.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Style",
-      home: StartingScreen(),
+      home: StartingTany(),
     );
   }
 }
