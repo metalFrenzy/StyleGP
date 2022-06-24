@@ -106,10 +106,18 @@ class _StartingTanyState extends State<StartingTany> {
             Container(
               height: 230,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(50),
-                  ),
-                  color: Color.fromARGB(255, 147, 54, 134)),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(50),
+                ),
+                gradient: LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 147, 54, 134),
+                    Color.fromARGB(175, 147, 54, 134),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
               child: Stack(
                 children: [
                   Positioned(
@@ -143,7 +151,7 @@ class _StartingTanyState extends State<StartingTany> {
               ),
             ),
             SizedBox(
-              height: 5,
+              height: height * 0.05,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -160,14 +168,21 @@ class _StartingTanyState extends State<StartingTany> {
                     ),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 147, 54, 134),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 147, 54, 134),
+                            Color.fromARGB(175, 147, 54, 134),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
                         borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(80),
+                          bottomLeft: Radius.circular(50),
+                          bottomRight: Radius.circular(50),
                         ),
                         boxShadow: [
                           new BoxShadow(
-                            color: Color.fromARGB(255, 147, 54, 134)
-                                .withOpacity(0.3),
+                            color: Color.fromARGB(100, 147, 54, 134),
                             offset: new Offset(-10.0, 0.0),
                             blurRadius: 20,
                             spreadRadius: 4,
@@ -196,14 +211,21 @@ class _StartingTanyState extends State<StartingTany> {
                     ),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 147, 54, 134),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 147, 54, 134),
+                            Color.fromARGB(175, 147, 54, 134),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
                         borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(80),
+                          bottomRight: Radius.circular(50),
+                          bottomLeft: Radius.circular(50),
                         ),
                         boxShadow: [
                           new BoxShadow(
-                            color: Color.fromARGB(255, 147, 54, 134)
-                                .withOpacity(0.3),
+                            color: Color.fromARGB(100, 147, 54, 134),
                             offset: new Offset(-10.0, 0.0),
                             blurRadius: 20,
                             spreadRadius: 4,
@@ -232,14 +254,21 @@ class _StartingTanyState extends State<StartingTany> {
                     ),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 147, 54, 134),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 147, 54, 134),
+                            Color.fromARGB(175, 147, 54, 134),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
                         borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(80),
+                          bottomLeft: Radius.circular(50),
+                          bottomRight: Radius.circular(50),
                         ),
                         boxShadow: [
                           new BoxShadow(
-                            color: Color.fromARGB(255, 147, 54, 134)
-                                .withOpacity(0.3),
+                            color: Color.fromARGB(100, 147, 54, 134),
                             offset: new Offset(-10.0, 0.0),
                             blurRadius: 20,
                             spreadRadius: 4,
@@ -295,7 +324,7 @@ class _StartingTanyState extends State<StartingTany> {
               onTap: () {},
               child: BuildCate(
                 width,
-                'assets/Chat1.png' /*need to fnide image*/,
+                'assets/Chat1.png',
                 "Sign Language recognition",
                 'images can be translated!',
               ),

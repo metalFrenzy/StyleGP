@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './starting-tany.dart';
+import 'starting.dart';
 
 void main() => runApp(MyApp());
 
